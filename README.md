@@ -1,6 +1,7 @@
 # Cox-sage
 The code for the article 'Cox-Sage: Enhancing Cox proportional hazards model with interpretable graph neural networks for cancer prognosis' under review in Briefings in Bioinformatics
 ## Data
+**Due to GitHub's storage limitations, we have uploaded the dataset to Kaggle. Link: [Kaggle Dataset](https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data)**
 Including TCGA datasets for 7 types of cancer: LUSC,STAD, LUAD,HNSC, ESCA, LIHC, COAD. Each dataset contains a processed protein-coding gene expression file named `expression.csv`, the corresponding processed clinical data in `clinical.csv`, and the adjacency list `adj_list.pkl` of patients' similarity graph.
 ├── data/
     ├── COAD/
