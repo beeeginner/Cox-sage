@@ -17,4 +17,4 @@ It is important to note that it is best not to train all seven datasets in `data
 
 
 ## Code for prognostic gene discovery
-**I haven't organized the code for this part yet. I am considering compressing the model parameters by storing the results of matrix multiplication, which can significantly reduce the inference cost**
+I am currently organizing the structure of this part of the code and will upload it later. **Executing this part of the code requires trained model parameters, and the inference overhead requires more than 10GB of GPU memory. However, to facilitate reproduction, I am considering providing a lightweight model by storing the results of matrix multiplication, which can reduce the inference overhead to a level that can be run on a personal PC.**
