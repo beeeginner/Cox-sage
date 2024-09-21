@@ -2,7 +2,7 @@
 The code for the article 'Cox-Sage: Enhancing Cox proportional hazards model with interpretable graph neural networks for cancer prognosis' under review in Briefings in Bioinformatics
 ## Data
 **Due to GitHub's storage limitations, we have uploaded the dataset to Kaggle. Link: [Kaggle Dataset](https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data)**
-Including TCGA datasets for 7 types of cancer: LUSC,STAD, LUAD,HNSC, ESCA, LIHC, COAD. Each dataset contains a processed protein-coding gene expression file named `expression.csv`, the corresponding processed clinical data in `clinical.csv`, and the adjacency list `adj_list.pkl` of patients' similarity graph.
+Including TCGA datasets for 7 types of cancer: LUSC,STAD, LUAD,HNSC, ESCA, LIHC, COAD. Each dataset contains a processed protein-coding gene expression file named `gene_expression.csv`, the corresponding processed clinical data in `clinical.csv`, and the adjacency list `adj_list.pkl` of patients' similarity graph.
 We do not provide the original clinical datasets because the handling of ordinal and numerical attributes, as well as the selection of clinical features, involves a significant amount of manual work. By providing the processed datasets and graph, users can directly execute the code, making it easier to reproduce the results in the paper.
 ## Code for Cancer Prognostic Model Training
 The code for model training is relatively simple, consisting of only two files: `train_single_model.py` and `train_all.py`. We recommend using `train_all.py` because it can train multiple models at once. The usage is as follows:
