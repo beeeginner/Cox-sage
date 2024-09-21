@@ -14,9 +14,8 @@ python train_all.py --interpreter_path your_interpreter_path  # Set to the curre
                      --save_path the directory where you want to store the trained model parameters
                      --log_path the path to the log file,  # Records the best performance of each dataset's cross-validation fold and the c-index score
 ```
-
-
-**Training the model requires a GPU with over 36GB of VRAM.**
+**Training the model requires a GPU with over 36GB of VRAM. Download the dataset from the Kaggle link we provided. Then, create a `path_to_save` folder and copy the datasets you need for training into it. 
+We recommend training two datasets at a time, as training more than that can lead to excessive storage space overhead.**
 
 
 ## Code for prognostic gene discovery
