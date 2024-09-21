@@ -13,7 +13,7 @@ python train_all.py --interpreter_path your_interpreter_path  # Set to the curre
                      --data_path the directory where your dataset is stored  # For example, it contains folders for LIHC, COAD
                      --save_path the directory where you want to store the trained model parameters
                      --log_path the path to the log file,  # Records the best performance of each dataset's cross-validation fold and the c-index score
-
+```
 
 
 **Training the model requires a GPU with over 36GB of VRAM.**
