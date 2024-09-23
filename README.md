@@ -25,12 +25,11 @@ I am currently organizing the structure of this part of the code and will upload
 
 ## Requirements
 
-We provide a brief guide on how to configure the environment to run our code. Firstly, you will need the GPU version of PyTorch. Make sure to check the version of Torch you have, for example, it could be 2.0.0+cu117. 
-Next, you will need to install the Torch Geometric framework and all its extensions. This can be done by running the following commands:
+We provide a brief guide on how to configure the environment to run our code. Firstly, you will need the GPU version of pytorch. Make sure to check the version of Torch you have, for example, it could be 2.0.0+cu117. Next, you will need to install the torch geometric and all its extensions. This can be done by running the following commands:
 ```bash
 pip install torch_geometric
 pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu117.html
 ```
-Most of the other requirements should be downloaded as dependencies when installing torch and torch Geometric.
+Remeber to replace the command with your version of pytorch, **The other dependencies are mostly installed along with torch during the installation process.**
 
 
