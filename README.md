@@ -22,3 +22,15 @@ We recommend training two datasets at a time, as training more than that can lea
 
 ## Code for prognostic gene discovery
 I am currently organizing the structure of this part of the code and will upload it later. **Executing this part of the code requires trained model parameters, and the inference overhead requires more than 10GB of GPU memory. However, to facilitate reproduction, I am considering providing a lightweight model by storing the results of matrix multiplication, which can reduce the inference overhead to a level that can be run on a personal PC.**
+
+## Requirements
+
+We provide a brief guide on how to configure the environment to run our code. Firstly, you will need the GPU version of PyTorch. Make sure to check the version of Torch you have, for example, it could be 2.0.0+cu117. 
+Next, you will need to install the Torch Geometric framework and all its extensions. This can be done by running the following commands:
+```bash
+pip install torch_geometric
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu117.html
+```
+Most of the other requirements should be downloaded as dependencies when installing torch and torch Geometric.
+
+
