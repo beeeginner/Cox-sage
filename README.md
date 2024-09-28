@@ -23,7 +23,15 @@ We recommend training two datasets at a time, as training more than that can lea
 
 
 ## Code for prognostic gene discovery
-I am currently organizing the structure of this part of the code and will upload it later. **Executing this part of the code requires trained model parameters, and the inference overhead requires more than 10GB of GPU memory. However, to facilitate reproduction, I am considering providing a lightweight model by storing the results of matrix multiplication, which can reduce the inference overhead to a level that can be run on a personal PC.**
+Once you have executed the code for the Cancer Prognostic Model Training section and saved the trained model parameters, you can run the code for prognostic gene discovery on the corresponding dataset for cancer prognostic gene discovery.
+```bash
+python prognostic_gene_discovery.py --mode <Metric> # Choose one of the two evaluation metrics proposed in our paper (MHZ or RMHZ). 
+                     --data_root <the directory where your dataset is stored>  # For example, it contains folders for LIHC, COAD. Default: data
+                     --model_save_root <the path where you storage model parameters> Default: save
+                     --dataset_name <name of the dataset> # Default: LIHC 
+                     -- best_folds <three numbers that indicate the fold at which each model achieved optimal performance> # Default: 4 1 2 (this is for the LIHC dataset)
+```
+**Executing this part of the code requires trained model parameters, and the inference overhead requires more than 10GB of GPU memory. However, to facilitate reproduction, I am considering providing a lightweight model by storing the results of matrix multiplication, which can reduce the inference overhead to a level that can be run on a personal PC.**
 
 ## Requirements
 
