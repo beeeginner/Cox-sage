@@ -1,5 +1,7 @@
 # Cox-sage
 The code for the article 'Cox-Sage: Enhancing Cox proportional hazards model with interpretable graph neural networks for cancer prognosis' under review in Briefings in Bioinformatics
+## Update: September 28, 2024
+Uploaded the code used for the prognostic gene discovery section of our paper.
 ## Update: September 23, 2024
 Due to errors in the code uploaded previously, we have re-uploaded the code for the prognostic model training section. This code can reproduce the same results as mentioned in our paper.
 ## Data
