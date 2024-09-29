@@ -91,7 +91,7 @@ def stratified_random_partition(arr, partitions=10, stratify_labels=None, random
     if stratify_labels is None:
         raise ValueError(r"stratify_labels must be provided for stratified sampling.")
     skf = StratifiedKFold(n_splits=partitions, shuffle=True, random_state=random_state)
-    # 生成分层交叉采样
+    
     fold_indices = list(skf.split(arr, stratify_labels))
     groups = [[] for _ in range(partitions)]
     for i, (_, test_indices) in enumerate(fold_indices):
@@ -127,11 +127,10 @@ def train(gene,adj_list,clinical,num_layers,save_path,log,seed=0,lr=1e-5,wd=1e-3
                 self.GNN4 = SAGEConv(in_channels=n3, out_channels=out_channels)
             elif num_layers == 2:
                 hidden_channels = int(in_channels/2)
-                # 如果是两层
                 self.GNN1 = SAGEConv(in_channels=in_channels, out_channels=hidden_channels)
                 self.GNN2 = SAGEConv(in_channels=hidden_channels, out_channels=out_channels)
             elif num_layers == 1:
-                # 如果只有一层
+                
                 self.GNN1 = SAGEConv(in_channels=in_channels, out_channels=out_channels)
             else:
                 raise Exception
