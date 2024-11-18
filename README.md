@@ -1,45 +1,31 @@
 # Cox-sage
 The code for the article 'Cox-Sage: Enhancing Cox proportional hazards model with interpretable graph neural networks for cancer prognosis' under review in Briefings in Bioinformatics
-## Update: September 28, 2024
-Uploaded the code used for the prognostic gene discovery section of our paper.
-## Update: September 23, 2024
-Due to errors in the code uploaded previously, we have re-uploaded the code for the prognostic model training section. This code can reproduce the same results as mentioned in our paper.
-## Data
-**Due to GitHub's storage limitations, we have uploaded the dataset to Kaggle. Link: [Kaggle Dataset](https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data)**
-Including TCGA datasets for 7 types of cancer: LUSC,STAD, LUAD,HNSC, ESCA, LIHC, COAD. Each dataset contains a processed protein-coding gene expression file named `gene_expression.csv`, the corresponding processed clinical data in `clinical.csv`, and the adjacency list `adj_list.pkl` of patients' similarity graph.
-We do not provide the original clinical datasets because the handling of ordinal and numerical attributes, as well as the selection of clinical features, involves a significant amount of manual work. By providing the processed datasets and graph, users can directly execute the code, making it easier to reproduce the results in the paper.
-## Code for Cancer Prognostic Model Training
+# Dataset Availability
 
-The code for model training is relatively simple, consisting of only two files: `train_single_model.py` and `train_all.py`. We recommend using `train_all.py` because it can train multiple models at once. The usage is as follows:
+We will upload the processed data to both Kaggle and Zendo. The Kaggle link is [here](url1), and the Zendo link is [here](url2).
+
+# Requirements
+
+To set up the project, you will need to install the following Python packages. You can install them using `pip` with the provided `requirements.txt` file.
+
+## Required Packages
+
+```plaintext
+kagglehub==0.3.4
+lifelines==0.29.0
+matplotlib==3.4.3
+numpy==1.22.4
+pandas==2.2.3
+scikit_learn==0.24.2
+torch==2.0.0
+torch_geometric==2.6.1
+```
+
+## Installation
+
+To install the required packages, run the following command in your terminal:
 
 ```bash
-python train_all.py --interpreter_path your_interpreter_path  # Set to the current interpreter path if left empty
-                     --data_path the directory where your dataset is stored  # For example, it contains folders for LIHC, COAD
-                     --save_path the directory where you want to store the trained model parameters
-                     --log_path the path to the log file,  # Records the best performance of each dataset's cross-validation fold and the c-index score
+pip install -r requirements.txt
 ```
-**Training the model requires a GPU with over 36GB of VRAM. Download the dataset from the Kaggle link we provided. Then, create a `data` folder and copy the datasets you need for training into it. 
-We recommend training two datasets at a time, as training more than that can lead to excessive storage space overhead.**
-
-
-## Code for prognostic gene discovery
-Once you have executed the code for the Cancer Prognostic Model Training section and saved the trained model parameters, you can run the code for prognostic gene discovery on the corresponding dataset for cancer prognostic gene discovery.
-```bash
-python prognostic_gene_discovery.py --mode <Metric> # Choose one of the two evaluation metrics proposed in our paper (MHZ or RMHZ). 
-                     --data_root <the directory where your dataset is stored>  # For example, it contains folders for LIHC, COAD. Default: data
-                     --model_save_root <the path where you storage model parameters> Default: save
-                     --dataset_name <name of the dataset> # Default: LIHC 
-                     -- best_folds <three numbers that indicate the fold at which each model achieved optimal performance> # Default: 4 1 2 (this is for the LIHC dataset)
-```
-**Executing this part of the code requires trained model parameters, and the inference overhead requires more than 10GB of GPU memory. However, to facilitate reproduction, I am considering providing a lightweight model by storing the results of matrix multiplication, which can reduce the inference overhead to a level that can be run on a personal PC.**
-
-## Requirements
-
-We provide a brief guide on how to configure the environment to run our code. Firstly, you will need the GPU version of pytorch. Make sure to check the version of Torch you have, for example, it could be 2.0.0+cu117. Next, you will need to install the torch geometric and all its extensions. This can be done by running the following commands:
-```bash
-pip install torch_geometric
-pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu117.html
-```
-Remeber to replace the command with your version of pytorch, **The other dependencies are mostly installed along with torch during the installation process.**
-
 
