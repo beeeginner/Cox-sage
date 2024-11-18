@@ -29,3 +29,18 @@ To install the required packages, run the following command in your terminal:
 pip install -r requirements.txt
 ```
 
+# Run code and reproduce all the results of the paper
+After installing the requirements and downloading this repository, you can reproduce all the results from our paper with just one line of code:
+
+```bash
+python run.py --disease <Disease Name>
+```
+
+This command will automatically execute the following workflow:
+- Dataset download
+- Training on the specified dataset (default is LIHC)
+- Outputting prediction results
+- Performing Kaplan-Meier survival analysis based on the output results and plotting the curves
+- Discovering cancer prognosis genes and generating visualizations
+
+
