@@ -2,7 +2,7 @@
 The code for the article 'Cox-Sage: Enhancing Cox proportional hazards model with interpretable graph neural networks for cancer prognosis' under review in Briefings in Bioinformatics
 # Dataset Availability
 
-We will upload the processed data to both Kaggle and Zendo. The Kaggle link is [here](url1), and the Zendo link is [here](url2).
+We will upload the processed data to both Kaggle and Zendo. The Kaggle link is [here](https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data), and the Zendo link is [here](url2).
 
 # Requirements
 
