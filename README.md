@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ```
 
 # Run code and reproduce all the results of the paper
-After installing the requirements and downloading this repository, you can reproduce all the results from our paper with just one line of code:
+After installing the requirements and downloading this repository (Just download all the code; there is no need to download the folder. The result folder will be automatically generated at the end of the code execution.), you can reproduce all the results from our paper with just one line of code:
 
 ```bash
 python run.py --disease <Disease Name>
