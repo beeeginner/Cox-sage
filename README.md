@@ -46,4 +46,21 @@ This command will automatically execute the following workflow:
 - Performing Kaplan-Meier survival analysis based on the output results and plotting the curves
 - Discovering cancer prognosis genes and generating visualizations
 
+### Parameters
+
+- `--disease` (str): 
+  - **Description**: The abbreviation of the cancer dataset you want to train, such as LIHC, LUSC.
+  - **Default**: LIHC
+
+- `--models_save_path` (str): 
+  - **Description**: Target directory name to storage models.
+  - **Default**: 'model_save'(If a folder with the same name appears in the working directory, the model training will be skipped.)
+
+- `--prediction_save_path` (str): 
+  - **Description**: The direction you want to storage risk prediction and km survival analysis.
+  - **Default**: 'prediction_output'(If a folder with the same name appears in the working directory,  the model's inference and KM survival analysis steps will be skipped.)
+ 
+- `--prognostic_gene_path` (str): 
+  - **Description**: The direction you want to storage prognostic genes discovery results.
+  - **Default**: 'prediction_output'(If a folder with the same name appears in the working directory, the model-based prognostic genes discovery step will be skipped.)
 
