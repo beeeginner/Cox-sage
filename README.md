@@ -4,6 +4,9 @@ The code for the article 'Cox-Sage: Enhancing Cox proportional hazards model wit
 
 We will upload the processed data to both Kaggle and Zendo. The Kaggle link is [here](https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data), and the Zendo link is [here](url2).
 
+# Experimental Results in the Paper
+The folder 'prediction_output' contains the prediction results of the model on the LIHC dataset, along with the corresponding KM survival analysis result images. The folder 'prognostic_genes' includes the results and images of the prognostic genes identified by the model on the LIHC dataset. Due to the large number of images, we have only uploaded a subset of them; the remaining results can be downloaded and reviewed via the zendo link.
+
 # Requirements
 
 To set up the project, you will need to install the following Python packages. You can install them using `pip` with the provided `requirements.txt` file.
