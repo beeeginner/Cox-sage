@@ -46,7 +46,7 @@ This command will automatically execute the following workflow:
 - Performing Kaplan-Meier survival analysis based on the output results and plotting the curves
 - Discovering cancer prognosis genes and generating visualizations
 
-### Parameters
+### Optional Parameters
 
 - `--disease` (str): 
   - **Description**: The abbreviation of the cancer dataset you want to train, such as LIHC, LUSC.
