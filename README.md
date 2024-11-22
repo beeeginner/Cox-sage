@@ -2,10 +2,10 @@
 The code for the article 'Cox-Sage: Enhancing Cox proportional hazards model with interpretable graph neural networks for cancer prognosis' under review in Briefings in Bioinformatics
 # Dataset Availability
 
-We will upload the processed data to both Kaggle and Zendo. The Kaggle link is [here](https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data), and the Zendo link is [here](https://zenodo.org/records/14204893).
+We will upload the processed data to both Kaggle and Zendo. The Kaggle link is [https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data](https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data), and the Zendo link is [https://zenodo.org/records/14204893](https://zenodo.org/records/14204893).
 
 # Experimental Results in the Paper
-The folder 'prediction_output' contains the prediction results of the model on the LIHC dataset, along with the corresponding KM survival analysis result images. The folder 'prognostic_genes' includes the results and images of the prognostic genes identified by the model on the LIHC dataset. Due to the large number of images, we have only uploaded a subset of them; the remaining results can be downloaded and reviewed via the zendo link.
+The folder 'prediction_output' contains the prediction results of the model on the LIHC dataset, along with the corresponding KM survival analysis result images. The folder 'prognostic_genes' includes the results and images of the prognostic genes identified by the model on the LIHC dataset. Due to the large number of images, we have only uploaded the most relevant parts; the remaining results can be downloaded and reviewed via the zendo link.
 
 # Requirements
 
