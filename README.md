@@ -2,7 +2,7 @@
 The code for the article 'Cox-Sage: Enhancing Cox proportional hazards model with interpretable graph neural networks for cancer prognosis' under review in Briefings in Bioinformatics
 # Dataset Availability
 
-We will upload the processed data to both Kaggle and Zendo. The Kaggle link is [https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data](https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data), and the Zendo link is [https://zenodo.org/records/14204893](https://zenodo.org/records/14204893).
+We will upload the processed data to both Kaggle and Zendo. The Kaggle link is [https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data](https://www.kaggle.com/datasets/ridgiemo/processed-gene-and-clinical-data), and the Zendo link is [https://zenodo.org/records/14204893](https://zenodo.org/records/14204893).You can also find the prediction outputs in the latest version of the zendo link.
 
 # Experimental Results in the Paper
 To reproduce Table 3, run the code at: [https://github.com/beeeginner/benchmarks_compare](https://github.com/beeeginner/benchmarks_compare). This link includes the code and prediction outputs of all reproduced benchmark methods, as well as the repeated experiments of the Cox-sage method under different random seeds. To reproduce Figures 2 and 3, you can follow the steps below to replicate the code in this repository.
