@@ -14,13 +14,13 @@ To set up the project, you will need to install the following Python packages. Y
 ## Required Packages
 
 ```plaintext
-kagglehub==0.3.4
-lifelines==0.29.0
+kagglehub==0.3.6
+lifelines==0.27.8
 matplotlib==3.4.3
 numpy==1.22.4
-pandas==2.2.3
+pandas==2.0.3
 scikit_learn==0.24.2
-torch==2.0.0
+torch==2.0.0+cu118
 torch_geometric==2.6.1
 ```
 
