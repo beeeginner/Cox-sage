@@ -20,7 +20,7 @@ matplotlib==3.4.3
 numpy==1.22.4
 pandas==2.0.3
 scikit_learn==0.24.2
-torch==2.0.0+cu118
+torch==2.0.0
 torch_geometric==2.6.1
 ```
 
