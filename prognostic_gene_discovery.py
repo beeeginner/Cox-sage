@@ -244,7 +244,7 @@ for n in [1, 2, 4]:
     flag = flag.squeeze()
     flags.append(flag)
 
-# Plot and save the hazard contour maps for each selected gene
+# Plot and save the hazard contour plots for each selected gene
 for gene_idx, gene in enumerate(selected_genes):
     where = gene_names.index(gene)
     x = X[:, where]
