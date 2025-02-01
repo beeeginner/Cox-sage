@@ -86,7 +86,7 @@ class MyOwnDataset:
 class SageCox(nn.Module):
     def __init__(self, num_layers=4, eps=1e-5):
         '''
-        Initialize SAGE-Cox model with specified number of graph layers.
+        Initialize CoxSage model with specified number of graph layers.
         
         Args:
             num_layers (int): Number of SAGEConv layers (1, 2, or 4)
