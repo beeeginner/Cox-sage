@@ -1,3 +1,7 @@
+'''
+    Load the trained model, generate a Kaplan-Meier (KM) survival curve based on its predictions, and output the hypothesis test results of the KM survival analysis.
+'''
+
 # Import required libraries
 from torch_geometric.data import Data  # PyTorch Geometric data handling
 import numpy as np  # Numerical computing
