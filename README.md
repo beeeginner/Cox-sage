@@ -63,4 +63,7 @@ This command will automatically execute the following workflow:
 - `--prognostic_gene_path` (str): 
   - **Description**: The direction you want to storage prognostic genes discovery results.
   - **Default**: 'prediction_output'(If a folder with the same name appears in the working directory, the model-based prognostic genes discovery step will be skipped.)
+    
+# Script Explanation
+
 
