@@ -66,4 +66,25 @@ This command will automatically execute the following workflow:
     
 # Script Explanation
 
+The following is an explanation of each script and its functionality:
+
+- **`data_download.py`**  
+  Automatically downloads the dataset from the Kaggle link and extracts it to the current directory.
+
+- **`train_single_model.py`**  
+  Trains a single model on the specified disease.
+
+- **`train_all_models.py`**  
+  Trains all models for all diseases.
+
+- **`inference_km.py`**  
+  Loads the specified trained model on the dataset of the specified disease, performs Kaplan-Meier survival analysis based on its predicted outputs, and plots the survival curve.
+
+- **`prognostic_gene_discovery.py`**  
+  Identifies prognostic genes for the specified disease using the trained Cox-Sage model.
+
+- **`run.py`**  
+  Executes all the processes for the specified disease.
+
+
 
