@@ -74,11 +74,13 @@ class MyOwnDataset:
         # Load and process node features
         node_file = self.path_node
         df_node = pd.read_csv(node_file, header=0)
+        df_node['patient_id'] = df_node['patient_id'].astype(str)
         df_node = df_node.sort_values(by='patient_id')
         df_node = df_node.reset_index(drop=True)
 
         # Load and process clinical labels
         df_clinical = pd.read_csv(self.label_csv, header=0)
+        df_clinical = df_clinical['patient_id'].astype(str)
         df_clinical = df_clinical.sort_values(by='patient_id')
         df_clinical = df_clinical.reset_index(drop=True)
         
