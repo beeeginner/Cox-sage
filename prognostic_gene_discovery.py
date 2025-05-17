@@ -41,6 +41,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load the gene expression data from a CSV file and sort by patient ID
 df = pd.read_csv(f'{data_root}/{dataset_name}/gene_expression.csv',header=0)
+df['patient_id'] = df['patient_id'].astype(str)
 df = df.sort_values(by='patient_id')
 df = df.reset_index(drop=True)
 
