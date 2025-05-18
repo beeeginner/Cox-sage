@@ -80,7 +80,7 @@ class MyOwnDataset:
 
         # Load and process clinical labels
         df_clinical = pd.read_csv(self.label_csv, header=0)
-        df_clinical = df_clinical['patient_id'].astype(str)
+        df_clinical['patient_id'] = df_clinical['patient_id'].astype(str)
         df_clinical = df_clinical.sort_values(by='patient_id')
         df_clinical = df_clinical.reset_index(drop=True)
         
